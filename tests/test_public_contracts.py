@@ -143,3 +143,34 @@ def test_dataset_metadata_relocation(tmp_path, monkeypatch):
     monkeypatch.setenv('HUGS_DATASET_ROOT', str(new_root))
     assert resolve_artifact_path(saved['scene_path'][0]) == str(new_root / saved['scene_path'][0])
     assert resolve_artifact_path(saved['world_cfg']['mesh']['file_path']) == str(new_root / 'object/DGN_2k/mesh.obj')
+
+
+def test_exact_scene_manifest(tmp_path):
+    import os
+    fn = load_definitions('src/task/synthesis.py', {'read_scene_manifest'}, {'os': os})['read_scene_manifest']
+    a, b = tmp_path / 'a.npy', tmp_path / 'b.npy'
+    a.touch(); b.touch()
+    manifest = tmp_path / 'scenes.txt'
+    manifest.write_text('b.npy\n\na.npy\n')
+    assert fn(str(manifest)) == [str(a), str(b)]
+    for content, error in [('a.npy\na.npy\n', 'Duplicate'), ('missing.npy', 'Invalid'), ('\n', 'Empty')]:
+        manifest.write_text(content)
+        with pytest.raises(ValueError, match=error):
+            fn(str(manifest))
+
+
+def test_manifest_selection_overrides_glob_and_rejects_filters(tmp_path):
+    import os
+    import numpy as np
+    ns = load_definitions('src/task/synthesis.py', {'read_scene_manifest', 'SynthesisRuntime'}, {'os': os, 'np': np})
+    runtime = ns['SynthesisRuntime'].__new__(ns['SynthesisRuntime'])
+    runtime._plan_scene_paths_cache = {}
+    p = tmp_path / 'scene.npy'; p.touch()
+    manifest = tmp_path / 'scenes.txt'; manifest.write_text(str(p) + '\n')
+    scene_source = {'manifest_path': str(manifest), 'template_path': '/unused/**/*.npy'}
+    config = {'world': {'type': 'scene_cfg'}}
+    assert runtime.collect_scene_paths_for_plan(config, scene_source) == [str(p)]
+    with pytest.raises(ValueError, match='cannot be combined'):
+        runtime.collect_scene_paths_for_plan(config, scene_source, [0.1])
+    with pytest.raises(ValueError, match='cannot be combined'):
+        runtime.collect_scene_paths_for_plan({'world': {'type': 'scene_cfg', 'end': 1}}, scene_source)

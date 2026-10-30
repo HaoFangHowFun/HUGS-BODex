@@ -24,6 +24,9 @@ grasp_types:
 # Hydra-managed scene selection. This default is shared by all robot hands.
 scene_source:
   type: explicit_scene_list
+  # Optional text file of scene paths, one per line (relative to the manifest).
+  # Overrides template_path; incompatible with slicing or object-scale filtering.
+  manifest_path:
   template_path: object/DGN_2k/scene_cfg/**/tabletop_ur10e/*.npy
   use_object_scale_list: false
   shuffle_before_slice: true

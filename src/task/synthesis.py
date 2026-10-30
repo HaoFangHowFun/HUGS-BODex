@@ -634,6 +634,28 @@ def _collect_requirement_mismatches(prefix: str, required: Any, actual: Any) -> 
     return []
 
 
+def read_scene_manifest(manifest_path: str) -> List[str]:
+    """Read an exact scene list, rejecting missing files and duplicate targets."""
+    manifest_path = os.path.abspath(os.path.expanduser(manifest_path))
+    paths = []
+    seen = set()
+    with open(manifest_path, encoding="utf-8") as stream:
+        for line in stream:
+            entry = line.strip()
+            if not entry:
+                continue
+            path = os.path.realpath(os.path.join(os.path.dirname(manifest_path), os.path.expanduser(entry)))
+            if not path.endswith(".npy") or not os.path.isfile(path):
+                raise ValueError(f"Invalid scene file in {manifest_path}: {entry}")
+            if path in seen:
+                raise ValueError(f"Duplicate scene in {manifest_path}: {entry}")
+            seen.add(path)
+            paths.append(path)
+    if not paths:
+        raise ValueError(f"Empty scene manifest: {manifest_path}")
+    return sorted(paths)
+
+
 def _build_scene_source_overrides(task_cfg: Any) -> Dict[str, Any]:
     """Build Hydra-managed scene source configuration.
 
@@ -1352,12 +1374,16 @@ class SynthesisRuntime:
             raise NotImplementedError(f"Only world.type=scene_cfg is supported, got {world_config.get('type')}")
 
         template_path = scene_source.get("template_path") or world_config.get("template_path")
+        manifest_path = scene_source.get("manifest_path")
         shuffle_before_slice = bool(scene_source.get("shuffle_before_slice", False))
         shuffle_seed = int(scene_source.get("shuffle_seed", 123))
         start = world_config.get("start")
         end = world_config.get("end")
         object_scale_list = tuple(object_scale_list) if object_scale_list is not None else None
+        if manifest_path and (start is not None or end is not None or object_scale_list is not None):
+            raise ValueError("Exact scene manifests cannot be combined with start/end or object-scale filtering.")
         cache_key = (
+            manifest_path,
             template_path,
             shuffle_before_slice,
             shuffle_seed,
@@ -1366,7 +1392,8 @@ class SynthesisRuntime:
             object_scale_list,
         )
         if cache_key not in self._plan_scene_paths_cache:
-            all_paths = self.collect_base_scene_paths_for_plan(str(template_path))
+            all_paths = (read_scene_manifest(str(manifest_path)) if manifest_path
+                         else self.collect_base_scene_paths_for_plan(str(template_path)))
             if shuffle_before_slice:
                 rng = np.random.default_rng(shuffle_seed)
                 all_paths = [all_paths[index] for index in rng.permutation(len(all_paths))]
