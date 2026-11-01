@@ -17,6 +17,6 @@ integration/regression checks; full Phase 1 motion/contact scans and grasp
 synthesis were not rerun during cleanup. Historical lift results are explicitly
 identified in the [project state](sharpa_project_state.md).
 
-No commit or push was performed. Runtime configuration, meshes and viewers were
-not changed by this cleanup. Shared assets now have an empty local Git repository;
-a remote has not been configured.
+Runtime configuration, meshes and viewers were not changed by this cleanup.
+The shared assets are committed locally; their GitHub repository must exist before
+that commit can be pushed.
