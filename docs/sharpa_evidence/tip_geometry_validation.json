@@ -1,0 +1,217 @@
+{
+  "index": {
+    "surface_queries": 7635,
+    "volume_samples": 22000,
+    "volume_mesh_uses_DP_hull": true,
+    "variants": {
+      "before": {
+        "DP_front_max_protrusion_mm": 2.6978678927272632,
+        "DP_front_p95_protrusion_mm": 1.3606388362647115,
+        "DP_patch_fraction_over_1mm": 0.0595939751146038,
+        "volume_coverage": 0.808957590170432,
+        "outside_volume_over_target": 0.20214030915576695,
+        "contact_hemisphere_exterior_p95_mm": 1.4382197885098547,
+        "contact_radius_mm": 5.533834
+      },
+      "dp": {
+        "DP_front_max_protrusion_mm": 1.1921652839678392,
+        "DP_front_p95_protrusion_mm": 0.043192780177764394,
+        "DP_patch_fraction_over_1mm": 0.004060248853962017,
+        "volume_coverage": 0.7572995111639582,
+        "outside_volume_over_target": 0.14202668780552252,
+        "contact_hemisphere_exterior_p95_mm": 1.4382197885098547,
+        "contact_radius_mm": 5.533834
+      },
+      "contact": {
+        "DP_front_max_protrusion_mm": 2.6978678927272632,
+        "DP_front_p95_protrusion_mm": 1.3606388362647115,
+        "DP_patch_fraction_over_1mm": 0.0595939751146038,
+        "volume_coverage": 0.7945567446161976,
+        "outside_volume_over_target": 0.1887964063945039,
+        "contact_hemisphere_exterior_p95_mm": 0.7794194603921728,
+        "contact_radius_mm": 5.257142299999999
+      },
+      "combined": {
+        "DP_front_max_protrusion_mm": 1.1921652839678392,
+        "DP_front_p95_protrusion_mm": 0.043192780177764394,
+        "DP_patch_fraction_over_1mm": 0.004060248853962017,
+        "volume_coverage": 0.7427665477606025,
+        "outside_volume_over_target": 0.12868278504425948,
+        "contact_hemisphere_exterior_p95_mm": 0.7794194603921728,
+        "contact_radius_mm": 5.257142299999999
+      }
+    }
+  },
+  "middle": {
+    "surface_queries": 7635,
+    "volume_samples": 22000,
+    "volume_mesh_uses_DP_hull": true,
+    "variants": {
+      "before": {
+        "DP_front_max_protrusion_mm": 2.6103669788006387,
+        "DP_front_p95_protrusion_mm": 1.3488164274192813,
+        "DP_patch_fraction_over_1mm": 0.05933202357563851,
+        "volume_coverage": 0.8161105577689243,
+        "outside_volume_over_target": 0.19272908366533864,
+        "contact_hemisphere_exterior_p95_mm": 1.4421585546825701,
+        "contact_radius_mm": 5.533834
+      },
+      "dp": {
+        "DP_front_max_protrusion_mm": 1.1963643182286883,
+        "DP_front_p95_protrusion_mm": 0.07843988258584512,
+        "DP_patch_fraction_over_1mm": 0.003929273084479371,
+        "volume_coverage": 0.7687998007968128,
+        "outside_volume_over_target": 0.14653884462151395,
+        "contact_hemisphere_exterior_p95_mm": 1.4421585546825701,
+        "contact_radius_mm": 5.533834
+      },
+      "contact": {
+        "DP_front_max_protrusion_mm": 2.6103669788006387,
+        "DP_front_p95_protrusion_mm": 1.3488164274192813,
+        "DP_patch_fraction_over_1mm": 0.05933202357563851,
+        "volume_coverage": 0.8035358565737052,
+        "outside_volume_over_target": 0.17778884462151395,
+        "contact_hemisphere_exterior_p95_mm": 0.7766869318433086,
+        "contact_radius_mm": 5.257142299999999
+      },
+      "combined": {
+        "DP_front_max_protrusion_mm": 1.1963643182286883,
+        "DP_front_p95_protrusion_mm": 0.07843988258584512,
+        "DP_patch_fraction_over_1mm": 0.003929273084479371,
+        "volume_coverage": 0.7559760956175299,
+        "outside_volume_over_target": 0.13159860557768924,
+        "contact_hemisphere_exterior_p95_mm": 0.7766869318433086,
+        "contact_radius_mm": 5.257142299999999
+      }
+    }
+  },
+  "ring": {
+    "surface_queries": 7635,
+    "volume_samples": 22000,
+    "volume_mesh_uses_DP_hull": true,
+    "variants": {
+      "before": {
+        "DP_front_max_protrusion_mm": 2.924545515732127,
+        "DP_front_p95_protrusion_mm": 1.5405090037270046,
+        "DP_patch_fraction_over_1mm": 0.09115913555992142,
+        "volume_coverage": 0.80550576184379,
+        "outside_volume_over_target": 0.20204865556978233,
+        "contact_hemisphere_exterior_p95_mm": 1.4358379192639958,
+        "contact_radius_mm": 5.533834
+      },
+      "dp": {
+        "DP_front_max_protrusion_mm": 1.1982362134139473,
+        "DP_front_p95_protrusion_mm": 0.05793487930394914,
+        "DP_patch_fraction_over_1mm": 0.004060248853962017,
+        "volume_coverage": 0.7633802816901408,
+        "outside_volume_over_target": 0.15057618437900128,
+        "contact_hemisphere_exterior_p95_mm": 1.4358379192639958,
+        "contact_radius_mm": 5.533834
+      },
+      "contact": {
+        "DP_front_max_protrusion_mm": 2.924545515732127,
+        "DP_front_p95_protrusion_mm": 1.5405090037270046,
+        "DP_patch_fraction_over_1mm": 0.09115913555992142,
+        "volume_coverage": 0.7915492957746478,
+        "outside_volume_over_target": 0.18886043533930857,
+        "contact_hemisphere_exterior_p95_mm": 0.7728788877885029,
+        "contact_radius_mm": 5.257142299999999
+      },
+      "combined": {
+        "DP_front_max_protrusion_mm": 1.1982362134139473,
+        "DP_front_p95_protrusion_mm": 0.05793487930394914,
+        "DP_patch_fraction_over_1mm": 0.004060248853962017,
+        "volume_coverage": 0.7490396927016645,
+        "outside_volume_over_target": 0.13738796414852752,
+        "contact_hemisphere_exterior_p95_mm": 0.7728788877885029,
+        "contact_radius_mm": 5.257142299999999
+      }
+    }
+  },
+  "pinky": {
+    "surface_queries": 7635,
+    "volume_samples": 22000,
+    "volume_mesh_uses_DP_hull": true,
+    "variants": {
+      "before": {
+        "DP_front_max_protrusion_mm": 2.816440134024191,
+        "DP_front_p95_protrusion_mm": 1.5732643303915899,
+        "DP_patch_fraction_over_1mm": 0.10124426981008514,
+        "volume_coverage": 0.818272218769422,
+        "outside_volume_over_target": 0.2093225605966439,
+        "contact_hemisphere_exterior_p95_mm": 1.4501445048059227,
+        "contact_radius_mm": 5.533834
+      },
+      "dp": {
+        "DP_front_max_protrusion_mm": 1.1943363980864916,
+        "DP_front_p95_protrusion_mm": 0.06202098746674851,
+        "DP_patch_fraction_over_1mm": 0.003929273084479371,
+        "volume_coverage": 0.7680546923555003,
+        "outside_volume_over_target": 0.14742075823492853,
+        "contact_hemisphere_exterior_p95_mm": 1.4501445048059227,
+        "contact_radius_mm": 5.533834
+      },
+      "contact": {
+        "DP_front_max_protrusion_mm": 2.816440134024191,
+        "DP_front_p95_protrusion_mm": 1.5732643303915899,
+        "DP_patch_fraction_over_1mm": 0.10124426981008514,
+        "volume_coverage": 0.8042262274704786,
+        "outside_volume_over_target": 0.19527656929770043,
+        "contact_hemisphere_exterior_p95_mm": 0.7810919650318081,
+        "contact_radius_mm": 5.257142299999999
+      },
+      "combined": {
+        "DP_front_max_protrusion_mm": 1.1943363980864916,
+        "DP_front_p95_protrusion_mm": 0.06202098746674851,
+        "DP_patch_fraction_over_1mm": 0.003929273084479371,
+        "volume_coverage": 0.7536357986326911,
+        "outside_volume_over_target": 0.13337476693598507,
+        "contact_hemisphere_exterior_p95_mm": 0.7810919650318081,
+        "contact_radius_mm": 5.257142299999999
+      }
+    }
+  },
+  "thumb": {
+    "surface_queries": 7525,
+    "volume_samples": 22000,
+    "volume_mesh_uses_DP_hull": false,
+    "variants": {
+      "before": {
+        "DP_front_max_protrusion_mm": 1.2418437432302718,
+        "DP_front_p95_protrusion_mm": 0.6453758346029318,
+        "DP_patch_fraction_over_1mm": 0.006112956810631229,
+        "volume_coverage": 0.761493898681129,
+        "outside_volume_over_target": 0.2348083323061753,
+        "contact_hemisphere_exterior_p95_mm": 1.4320056294101087,
+        "contact_radius_mm": 5.2146859999999995
+      },
+      "dp": {
+        "DP_front_max_protrusion_mm": 0.655781410279499,
+        "DP_front_p95_protrusion_mm": 0.2380312242073039,
+        "DP_patch_fraction_over_1mm": 0.0,
+        "volume_coverage": 0.7660544804634537,
+        "outside_volume_over_target": 0.2202637741895723,
+        "contact_hemisphere_exterior_p95_mm": 1.4320056294101087,
+        "contact_radius_mm": 5.2146859999999995
+      },
+      "contact": {
+        "DP_front_max_protrusion_mm": 1.2418437432302718,
+        "DP_front_p95_protrusion_mm": 0.6453758346029318,
+        "DP_patch_fraction_over_1mm": 0.006112956810631229,
+        "volume_coverage": 0.7200788857389375,
+        "outside_volume_over_target": 0.23074078639221005,
+        "contact_hemisphere_exterior_p95_mm": 0.9364105003984108,
+        "contact_radius_mm": 4.1717488
+      },
+      "combined": {
+        "DP_front_max_protrusion_mm": 0.655781410279499,
+        "DP_front_p95_protrusion_mm": 0.2380312242073039,
+        "DP_patch_fraction_over_1mm": 0.0,
+        "volume_coverage": 0.7283372365339579,
+        "outside_volume_over_target": 0.21619622827560706,
+        "contact_hemisphere_exterior_p95_mm": 0.9364105003984108,
+        "contact_radius_mm": 4.1717488
+      }
+    }
+  }
+}

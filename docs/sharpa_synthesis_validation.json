@@ -1,0 +1,19 @@
+{
+  "cuda_fk_samples": 12,
+  "canonical_joint_order": true,
+  "max_fk_matrix_error": 4.915341416111829e-07,
+  "human_prior_mapping_samples": 12,
+  "human_prior_position_error_m": 3.1178126247422e-08,
+  "human_prior_rotation_matrix_error": 1.3987577285323738e-07,
+  "human_prior_scope": "Actual seed builder with synthetic world poses; no human dataset quality or finger-joint retargeting claim.",
+  "zero_pose_sphere_overlap_pairs": [
+    {
+      "links": [
+        "right_index_PP",
+        "right_middle_PP"
+      ],
+      "sphere_penetration_m": 0.0006749649668831778
+    }
+  ],
+  "zero_pose_overlap_note": "Proxy overlaps, not physical mesh penetration; kept visible and not excluded."
+}

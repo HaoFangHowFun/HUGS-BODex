@@ -1,0 +1,99 @@
+{
+  "changed_links": [
+    "right_index_PP",
+    "right_middle_PP",
+    "right_ring_PP",
+    "right_pinky_PP"
+  ],
+  "changed_spheres": 12,
+  "unchanged_spheres": 38,
+  "max_center_shift_mm": 1.4622550854886385,
+  "max_radius_reduction_mm": 0.606389096902463,
+  "PP_coverage": {
+    "before": 0.9096770269969231,
+    "after": 0.8718992797273981
+  },
+  "zero_self_cost": {
+    "before": 0.39551934599876404,
+    "after": 0.09025037288665771
+  },
+  "zero_self_cost_reduction_fraction": 0.7718180569429346,
+  "zero_PP_gaps_mm": {
+    "before": [
+      -1.965194009244442,
+      -1.652163453400135,
+      -0.6284508854150772
+    ],
+    "after": [
+      0.09999889880418777,
+      0.09999983012676239,
+      0.09999796748161316
+    ]
+  },
+  "runs": {
+    "dp_init_zero_a": {
+      "physical_success": 8,
+      "success_and_limits_valid": 7,
+      "all_stages_within_limits": 13,
+      "max_limit_violation_rad_by_stage": [
+        0.0,
+        0.0,
+        0.14458003010749815
+      ],
+      "max_static_ho_penetration_mm": 2.712326042973055,
+      "max_static_self_penetration_mm": 2.8283223110636726,
+      "warnings": 0,
+      "median_abs_mesh_distance_mm": 0.570357084274292,
+      "median_worst_mesh_distance_mm": 2.310568332672119,
+      "all_five_within2mm": 8
+    },
+    "dp_init_zero_b": {
+      "physical_success": 8,
+      "success_and_limits_valid": 7,
+      "all_stages_within_limits": 15,
+      "max_limit_violation_rad_by_stage": [
+        0.0,
+        0.0,
+        0.24254744615554807
+      ],
+      "max_static_ho_penetration_mm": 4.217299201506429,
+      "max_static_self_penetration_mm": 3.3334623308929894,
+      "warnings": 0,
+      "median_abs_mesh_distance_mm": 0.40093231201171875,
+      "median_worst_mesh_distance_mm": 2.9508585929870605,
+      "all_five_within2mm": 7
+    },
+    "pp_refined_a": {
+      "physical_success": 9,
+      "success_and_limits_valid": 8,
+      "all_stages_within_limits": 16,
+      "max_limit_violation_rad_by_stage": [
+        0.0,
+        0.0,
+        0.11220773425102232
+      ],
+      "max_static_ho_penetration_mm": 3.055470129803827,
+      "max_static_self_penetration_mm": 3.2424609440529246,
+      "warnings": 0,
+      "median_abs_mesh_distance_mm": 0.5438073575496674,
+      "median_worst_mesh_distance_mm": 3.393798351287842,
+      "all_five_within2mm": 5
+    },
+    "pp_refined_b": {
+      "physical_success": 8,
+      "success_and_limits_valid": 7,
+      "all_stages_within_limits": 13,
+      "max_limit_violation_rad_by_stage": [
+        0.0,
+        0.0,
+        0.2810794052124023
+      ],
+      "max_static_ho_penetration_mm": 4.944610179614641,
+      "max_static_self_penetration_mm": 5.296234327190255,
+      "warnings": 0,
+      "median_abs_mesh_distance_mm": 0.5798231959342957,
+      "median_worst_mesh_distance_mm": 3.680999279022217,
+      "all_five_within2mm": 6
+    }
+  }
+}

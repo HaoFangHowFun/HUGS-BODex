@@ -1,0 +1,468 @@
+{
+  "sharpa": [
+    {
+      "world_weight": 100.0,
+      "self_weight": 100.0,
+      "robot_file": "right_sharpa_wave_50_tip_contact.yml",
+      "grasp_targets": 5,
+      "total_spheres": 50,
+      "final_clearance_mm": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0
+      ],
+      "DP_and_pad_indices": {
+        "right_index_DP": [
+          18,
+          19
+        ],
+        "right_index_elastomer": [
+          20
+        ],
+        "right_middle_DP": [
+          27,
+          28
+        ],
+        "right_middle_elastomer": [
+          29
+        ],
+        "right_ring_DP": [
+          36,
+          37
+        ],
+        "right_ring_elastomer": [
+          38
+        ],
+        "right_pinky_DP": [
+          47,
+          48
+        ],
+        "right_pinky_elastomer": [
+          49
+        ],
+        "right_thumb_DP": [
+          10
+        ],
+        "right_thumb_elastomer": [
+          11
+        ]
+      }
+    },
+    {
+      "world_weight": 100.0,
+      "self_weight": 100.0,
+      "robot_file": "right_sharpa_wave_50_tip_contact.yml",
+      "grasp_targets": 5,
+      "total_spheres": 50,
+      "final_clearance_mm": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0
+      ],
+      "DP_and_pad_indices": {
+        "right_index_DP": [
+          18,
+          19
+        ],
+        "right_index_elastomer": [
+          20
+        ],
+        "right_middle_DP": [
+          27,
+          28
+        ],
+        "right_middle_elastomer": [
+          29
+        ],
+        "right_ring_DP": [
+          36,
+          37
+        ],
+        "right_ring_elastomer": [
+          38
+        ],
+        "right_pinky_DP": [
+          47,
+          48
+        ],
+        "right_pinky_elastomer": [
+          49
+        ],
+        "right_thumb_DP": [
+          10
+        ],
+        "right_thumb_elastomer": [
+          11
+        ]
+      }
+    },
+    {
+      "world_weight": 100.0,
+      "self_weight": 100.0,
+      "robot_file": "right_sharpa_wave_50_tip_contact.yml",
+      "grasp_targets": 5,
+      "total_spheres": 50,
+      "final_clearance_mm": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0
+      ],
+      "DP_and_pad_indices": {
+        "right_index_DP": [
+          18,
+          19
+        ],
+        "right_index_elastomer": [
+          20
+        ],
+        "right_middle_DP": [
+          27,
+          28
+        ],
+        "right_middle_elastomer": [
+          29
+        ],
+        "right_ring_DP": [
+          36,
+          37
+        ],
+        "right_ring_elastomer": [
+          38
+        ],
+        "right_pinky_DP": [
+          47,
+          48
+        ],
+        "right_pinky_elastomer": [
+          49
+        ],
+        "right_thumb_DP": [
+          10
+        ],
+        "right_thumb_elastomer": [
+          11
+        ]
+      }
+    }
+  ],
+  "shadow": [
+    {
+      "world_weight": 100.0,
+      "self_weight": 100.0,
+      "robot_file": "right_shadow_hand_sim.yml",
+      "grasp_targets": 5,
+      "total_spheres": 50,
+      "final_clearance_mm": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0
+      ]
+    },
+    {
+      "world_weight": 100.0,
+      "self_weight": 100.0,
+      "robot_file": "right_shadow_hand_sim.yml",
+      "grasp_targets": 5,
+      "total_spheres": 50,
+      "final_clearance_mm": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0
+      ]
+    },
+    {
+      "world_weight": 100.0,
+      "self_weight": 100.0,
+      "robot_file": "right_shadow_hand_sim.yml",
+      "grasp_targets": 5,
+      "total_spheres": 50,
+      "final_clearance_mm": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        -2.0,
+        -2.0
+      ]
+    }
+  ]
+}

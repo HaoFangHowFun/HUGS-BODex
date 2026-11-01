@@ -1,0 +1,229 @@
+{
+  "total_spheres": 50,
+  "collision_links": 27,
+  "seed": 123,
+  "budgets": {
+    "right_hand_wrist": 1,
+    "right_hand_C_MC": 7,
+    "right_thumb_MC": 3,
+    "right_thumb_PP": 2,
+    "right_thumb_DP": 1,
+    "right_thumb_elastomer": 1,
+    "right_pinky_MC": 3,
+    "right_index_MCP_VL": 1,
+    "right_index_PP": 3,
+    "right_index_MP": 2,
+    "right_index_DP": 1,
+    "right_index_elastomer": 1,
+    "right_middle_MCP_VL": 1,
+    "right_middle_PP": 3,
+    "right_middle_MP": 2,
+    "right_middle_DP": 1,
+    "right_middle_elastomer": 1,
+    "right_ring_MCP_VL": 1,
+    "right_ring_PP": 3,
+    "right_ring_MP": 2,
+    "right_ring_DP": 1,
+    "right_ring_elastomer": 1,
+    "right_pinky_MCP_VL": 1,
+    "right_pinky_PP": 3,
+    "right_pinky_MP": 2,
+    "right_pinky_DP": 1,
+    "right_pinky_elastomer": 1
+  },
+  "links": {
+    "right_hand_wrist": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.010389793026545371,
+      "p95_surface_gap_m": 0.009646129348638814,
+      "surface_fraction_within_2mm": 0.0766,
+      "source_mesh_watertight": true
+    },
+    "right_hand_C_MC": {
+      "spheres": 7,
+      "max_surface_gap_m": 0.016867752208003496,
+      "p95_surface_gap_m": 0.010969939115198134,
+      "surface_fraction_within_2mm": 0.319,
+      "source_mesh_watertight": true
+    },
+    "right_thumb_MC": {
+      "spheres": 3,
+      "max_surface_gap_m": 0.009266684942308555,
+      "p95_surface_gap_m": 0.0075566518551211685,
+      "surface_fraction_within_2mm": 0.2858,
+      "source_mesh_watertight": true
+    },
+    "right_thumb_PP": {
+      "spheres": 2,
+      "max_surface_gap_m": 0.009743762943788835,
+      "p95_surface_gap_m": 0.008262240715564329,
+      "surface_fraction_within_2mm": 0.5606,
+      "source_mesh_watertight": true
+    },
+    "right_thumb_DP": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.012245030586745273,
+      "p95_surface_gap_m": 0.010983328162715515,
+      "surface_fraction_within_2mm": 0.0756,
+      "source_mesh_watertight": true
+    },
+    "right_thumb_elastomer": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.011590445440321465,
+      "p95_surface_gap_m": 0.010032015627437838,
+      "surface_fraction_within_2mm": 0.2099,
+      "source_mesh_watertight": true
+    },
+    "right_index_MCP_VL": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.007022242525577067,
+      "p95_surface_gap_m": 0.0062567865112976295,
+      "surface_fraction_within_2mm": 0.1786,
+      "source_mesh_watertight": true
+    },
+    "right_index_PP": {
+      "spheres": 3,
+      "max_surface_gap_m": 0.004575946450281539,
+      "p95_surface_gap_m": 0.0033416797608144394,
+      "surface_fraction_within_2mm": 0.6231,
+      "source_mesh_watertight": true
+    },
+    "right_index_MP": {
+      "spheres": 2,
+      "max_surface_gap_m": 0.010817031853342977,
+      "p95_surface_gap_m": 0.00927245768731205,
+      "surface_fraction_within_2mm": 0.4923,
+      "source_mesh_watertight": false
+    },
+    "right_index_DP": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.010069983912949465,
+      "p95_surface_gap_m": 0.00816895381934143,
+      "surface_fraction_within_2mm": 0.197,
+      "source_mesh_watertight": false
+    },
+    "right_index_elastomer": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.00827372138951952,
+      "p95_surface_gap_m": 0.007256998426361619,
+      "surface_fraction_within_2mm": 0.2527,
+      "source_mesh_watertight": true
+    },
+    "right_middle_MCP_VL": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.007022242525577067,
+      "p95_surface_gap_m": 0.0062567865112976295,
+      "surface_fraction_within_2mm": 0.1786,
+      "source_mesh_watertight": true
+    },
+    "right_middle_PP": {
+      "spheres": 3,
+      "max_surface_gap_m": 0.004575946450281539,
+      "p95_surface_gap_m": 0.0033416797608144394,
+      "surface_fraction_within_2mm": 0.6231,
+      "source_mesh_watertight": true
+    },
+    "right_middle_MP": {
+      "spheres": 2,
+      "max_surface_gap_m": 0.010817031853342977,
+      "p95_surface_gap_m": 0.00927245768731205,
+      "surface_fraction_within_2mm": 0.4923,
+      "source_mesh_watertight": false
+    },
+    "right_middle_DP": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.010069983912949465,
+      "p95_surface_gap_m": 0.00816895381934143,
+      "surface_fraction_within_2mm": 0.197,
+      "source_mesh_watertight": false
+    },
+    "right_middle_elastomer": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.00827372138951952,
+      "p95_surface_gap_m": 0.007256998426361619,
+      "surface_fraction_within_2mm": 0.2527,
+      "source_mesh_watertight": true
+    },
+    "right_ring_MCP_VL": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.007022242525577067,
+      "p95_surface_gap_m": 0.0062567865112976295,
+      "surface_fraction_within_2mm": 0.1786,
+      "source_mesh_watertight": true
+    },
+    "right_ring_PP": {
+      "spheres": 3,
+      "max_surface_gap_m": 0.004575946450281539,
+      "p95_surface_gap_m": 0.0033416797608144394,
+      "surface_fraction_within_2mm": 0.6231,
+      "source_mesh_watertight": true
+    },
+    "right_ring_MP": {
+      "spheres": 2,
+      "max_surface_gap_m": 0.010817031853342977,
+      "p95_surface_gap_m": 0.00927245768731205,
+      "surface_fraction_within_2mm": 0.4923,
+      "source_mesh_watertight": false
+    },
+    "right_ring_DP": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.010069983912949465,
+      "p95_surface_gap_m": 0.00816895381934143,
+      "surface_fraction_within_2mm": 0.197,
+      "source_mesh_watertight": false
+    },
+    "right_ring_elastomer": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.00827372138951952,
+      "p95_surface_gap_m": 0.007256998426361619,
+      "surface_fraction_within_2mm": 0.2527,
+      "source_mesh_watertight": true
+    },
+    "right_pinky_MC": {
+      "spheres": 3,
+      "max_surface_gap_m": 0.01843300671552517,
+      "p95_surface_gap_m": 0.012902456908381682,
+      "surface_fraction_within_2mm": 0.1925,
+      "source_mesh_watertight": true
+    },
+    "right_pinky_MCP_VL": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.007022242525577067,
+      "p95_surface_gap_m": 0.0062567865112976295,
+      "surface_fraction_within_2mm": 0.1786,
+      "source_mesh_watertight": true
+    },
+    "right_pinky_PP": {
+      "spheres": 3,
+      "max_surface_gap_m": 0.004575946450281539,
+      "p95_surface_gap_m": 0.0033416797608144394,
+      "surface_fraction_within_2mm": 0.6231,
+      "source_mesh_watertight": true
+    },
+    "right_pinky_MP": {
+      "spheres": 2,
+      "max_surface_gap_m": 0.010817031853342977,
+      "p95_surface_gap_m": 0.00927245768731205,
+      "surface_fraction_within_2mm": 0.4923,
+      "source_mesh_watertight": false
+    },
+    "right_pinky_DP": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.010069983912949465,
+      "p95_surface_gap_m": 0.00816895381934143,
+      "surface_fraction_within_2mm": 0.197,
+      "source_mesh_watertight": false
+    },
+    "right_pinky_elastomer": {
+      "spheres": 1,
+      "max_surface_gap_m": 0.00827372138951952,
+      "p95_surface_gap_m": 0.007256998426361619,
+      "surface_fraction_within_2mm": 0.2527,
+      "source_mesh_watertight": true
+    }
+  },
+  "zero_pose_retained_pair_overlaps": [],
+  "scope": "Preview-only alternative; baseline 998-sphere files unchanged; no synthesis run.",
+  "method": "Interior boundary-distance radius + 1 mm, greedy mean squared surface-gap reduction under fixed per-link budgets.",
+  "limitation": "Sparse coverage; open-mesh interior signs approximate. Sphere count is not a geometry-quality guarantee."
+}

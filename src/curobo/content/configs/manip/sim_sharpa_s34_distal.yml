@@ -1,0 +1,45 @@
+robot_name: sharpa
+scene_source:
+  min_object_height: 0.01
+  object_height_record_file: tabletop_scene_object_heights.jsonl
+human_prior:
+  root: null
+  total_budget: null
+  min_type_budget: null
+  max_type_budget: null
+  score_threshold: null
+  budget_resolution: null
+  budget_rounding_mode: null
+  target_batch_grasps: null
+  max_parallel_world: null
+  replacement: null
+  seed: null
+  right_hand_index: null
+  jitter:
+    enabled: null
+grasp_types:
+  3_right_full:
+    type_id: 3
+    manip_cfg_file: sim_sharpa/tabletop_full_s34_distal.yml
+    object_scale_list: null
+    robot_group: single_right
+    transfer_file: hand_pose_human_transfer/right_sharpa_wave_s34.yml
+    transfer_links:
+    - right_hand_C_MC
+    hand_indices:
+    - 0
+    jitter:
+      translational_bounds_xyz:
+      - - -0.01
+        - 0.0
+        - -0.02
+      - - 0.01
+        - 0.01
+        - 0.02
+      rotational_bounds_deg_xyz:
+      - - -30
+        - -30
+        - -15
+      - - 30
+        - 30
+        - 15

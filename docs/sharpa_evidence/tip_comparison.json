@@ -1,0 +1,130 @@
+{
+  "pp_refined_a": {
+    "physical_success": 9,
+    "success_and_limits_valid": 8,
+    "all_stages_within_limits": 16,
+    "max_limit_violation_rad_by_stage": [
+      0.0,
+      0.0,
+      0.11220773425102232
+    ],
+    "max_static_ho_penetration_mm": 3.055470129803827,
+    "max_static_self_penetration_mm": 3.2424609440529246,
+    "warnings": 0,
+    "median_absolute_mesh_gap_mm": 0.5438073575496674,
+    "median_worst_absolute_mesh_gap_mm": 3.393798351287842,
+    "all_five_within2mm": 5
+  },
+  "pp_refined_b": {
+    "physical_success": 8,
+    "success_and_limits_valid": 7,
+    "all_stages_within_limits": 13,
+    "max_limit_violation_rad_by_stage": [
+      0.0,
+      0.0,
+      0.2810794052124023
+    ],
+    "max_static_ho_penetration_mm": 4.944610179614641,
+    "max_static_self_penetration_mm": 5.296234327190255,
+    "warnings": 0,
+    "median_absolute_mesh_gap_mm": 0.5798231959342957,
+    "median_worst_absolute_mesh_gap_mm": 3.680999279022217,
+    "all_five_within2mm": 6
+  },
+  "tip_dp_a": {
+    "physical_success": 10,
+    "success_and_limits_valid": 6,
+    "all_stages_within_limits": 13,
+    "max_limit_violation_rad_by_stage": [
+      0.0,
+      0.0,
+      0.2225522932052612
+    ],
+    "max_static_ho_penetration_mm": 4.54842362724756,
+    "max_static_self_penetration_mm": 3.1251145554149367,
+    "warnings": 0,
+    "median_absolute_mesh_gap_mm": 0.576810359954834,
+    "median_worst_absolute_mesh_gap_mm": 3.594041347503662,
+    "all_five_within2mm": 7
+  },
+  "tip_dp_b": {
+    "physical_success": 8,
+    "success_and_limits_valid": 5,
+    "all_stages_within_limits": 12,
+    "max_limit_violation_rad_by_stage": [
+      0.0,
+      0.0,
+      0.2380409773826599
+    ],
+    "max_static_ho_penetration_mm": 3.838707179232962,
+    "max_static_self_penetration_mm": 6.667431368695419,
+    "warnings": 0,
+    "median_absolute_mesh_gap_mm": 0.5192480683326721,
+    "median_worst_absolute_mesh_gap_mm": 4.380256652832031,
+    "all_five_within2mm": 5
+  },
+  "tip_contact_a": {
+    "physical_success": 10,
+    "success_and_limits_valid": 7,
+    "all_stages_within_limits": 13,
+    "max_limit_violation_rad_by_stage": [
+      0.0,
+      0.0,
+      0.19818049039840696
+    ],
+    "max_static_ho_penetration_mm": 3.3905170848532884,
+    "max_static_self_penetration_mm": 6.846099105395834,
+    "warnings": 0,
+    "median_absolute_mesh_gap_mm": 0.4077621400356293,
+    "median_worst_absolute_mesh_gap_mm": 2.9921741485595703,
+    "all_five_within2mm": 7
+  },
+  "tip_contact_b": {
+    "physical_success": 11,
+    "success_and_limits_valid": 9,
+    "all_stages_within_limits": 16,
+    "max_limit_violation_rad_by_stage": [
+      0.0,
+      0.0,
+      0.09439038600921629
+    ],
+    "max_static_ho_penetration_mm": 2.8339578026345214,
+    "max_static_self_penetration_mm": 5.14458832142778,
+    "warnings": 0,
+    "median_absolute_mesh_gap_mm": 0.45666487514972687,
+    "median_worst_absolute_mesh_gap_mm": 3.8816466331481934,
+    "all_five_within2mm": 7
+  },
+  "tip_combined_a": {
+    "physical_success": 9,
+    "success_and_limits_valid": 7,
+    "all_stages_within_limits": 14,
+    "max_limit_violation_rad_by_stage": [
+      0.0,
+      0.0,
+      0.12862207856178282
+    ],
+    "max_static_ho_penetration_mm": 2.723366936676569,
+    "max_static_self_penetration_mm": 5.312145596193181,
+    "warnings": 0,
+    "median_absolute_mesh_gap_mm": 0.6370081901550293,
+    "median_worst_absolute_mesh_gap_mm": 3.156881332397461,
+    "all_five_within2mm": 7
+  },
+  "tip_combined_b": {
+    "physical_success": 9,
+    "success_and_limits_valid": 3,
+    "all_stages_within_limits": 11,
+    "max_limit_violation_rad_by_stage": [
+      0.0,
+      0.0,
+      0.17671405639648435
+    ],
+    "max_static_ho_penetration_mm": 2.693808788815791,
+    "max_static_self_penetration_mm": 6.539837919555264,
+    "warnings": 0,
+    "median_absolute_mesh_gap_mm": 0.6561672389507294,
+    "median_worst_absolute_mesh_gap_mm": 3.03486967086792,
+    "all_five_within2mm": 6
+  }
+}

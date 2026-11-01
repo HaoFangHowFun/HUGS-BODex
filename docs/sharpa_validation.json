@@ -1,0 +1,20 @@
+[
+  {
+    "side": "right",
+    "joints": 22,
+    "links": 35,
+    "fk_samples": 19,
+    "max_fk_matrix_error": 3.885780586188048e-16,
+    "collision_model": "not configured",
+    "scope": "CPU URDF parser and config; CUDA kernels not exercised"
+  },
+  {
+    "side": "left",
+    "joints": 22,
+    "links": 35,
+    "fk_samples": 19,
+    "max_fk_matrix_error": 3.3306690738754696e-16,
+    "collision_model": "not configured",
+    "scope": "CPU URDF parser and config; CUDA kernels not exercised"
+  }
+]

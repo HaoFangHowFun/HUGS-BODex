@@ -106,7 +106,11 @@ class ArmCostConfig:
             if "contact_strategy" in data_dict:
                 strategy = data_dict["contact_strategy"]
                 contact_points_idx = robot_config.kinematics.get_sphere_idx_from_namelst(
-                    strategy["contact_points_name"], all_points_in_link=True
+                    # Optional object-clearance allowances; grasp attraction and
+                    # mesh contact queries still use contact_points_name above.
+                    strategy["contact_points_name"]
+                    + strategy.get("additional_collision_contact_points_name", []),
+                    all_points_in_link=True
                 )
             else:
                 strategy = None

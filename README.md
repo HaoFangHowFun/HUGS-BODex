@@ -9,6 +9,9 @@
   <a href="#documentation">Documentation</a>
 </p>
 
+Sharpa Wave: [current project state and retained 50-sphere preset](docs/sharpa_project_state.md).
+The generic `sim_sharpa.yml` entry remains the [34-sphere preset](docs/sharpa_default.md).
+
 GPU-accelerated grasp optimization for **Shadow Hand and Leap-SP**, supporting
 single-hand and bimanual contact modes. Exported human priors from
 [HUGS-DexLearn](https://github.com/hugs-dex/HUGS-DexLearn#human-prior) guide the

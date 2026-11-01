@@ -1,0 +1,703 @@
+{
+  "total_spheres": 50,
+  "changed_spheres": 23,
+  "max_shift_m": 0.005309064513769878,
+  "shadow_reference": {
+    "proximal": {
+      "median_dorsal_offset_m": 0.001000890344791651,
+      "median_dorsal_fraction_of_thickness": 0.055605017875815184,
+      "scope": "Four primary fingers; thumb proximal is not uniformly dorsal in Shadow."
+    },
+    "middle": {
+      "median_dorsal_offset_m": 0.0004982102478999885,
+      "median_dorsal_fraction_of_thickness": 0.029383018907964645,
+      "scope": "Four primary fingers; thumb proximal is not uniformly dorsal in Shadow."
+    },
+    "distal": {
+      "median_dorsal_offset_m": 0.0011691117292524215,
+      "median_dorsal_fraction_of_thickness": 0.08153810936483627,
+      "scope": "Four primary fingers; thumb proximal is not uniformly dorsal in Shadow."
+    }
+  },
+  "changes": {
+    "right_thumb_PP": {
+      "dorsal_direction_local": [
+        3.6732051031730025e-06,
+        3.6731916109809354e-06,
+        -0.9999999999865077
+      ],
+      "reference": "proximal",
+      "combined_distal_reference": false,
+      "target_dorsal_coordinate_m": 0.002357068579977537,
+      "spheres": [
+        {
+          "shift_m": 0.002356969403439751,
+          "before_center": [
+            0.027000000000000003,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.027000008657632045,
+            8.657600240053634e-09,
+            -0.0023569694034079503
+          ],
+          "radius": 0.010639629411092564
+        },
+        {
+          "shift_m": 0.0023570024622856798,
+          "before_center": [
+            0.018000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.018000008657753475,
+            8.657721671529167e-09,
+            -0.0023570024622538784
+          ],
+          "radius": 0.010200466640293601
+        }
+      ]
+    },
+    "right_thumb_DP": {
+      "dorsal_direction_local": [
+        3.673205103173003e-06,
+        -0.9999999999932538,
+        1.3492402693092235e-11
+      ],
+      "reference": "distal",
+      "combined_distal_reference": true,
+      "target_dorsal_coordinate_m": 0.0029095068070376,
+      "spheres": [
+        {
+          "shift_m": 0.0,
+          "before_center": [
+            0.015,
+            -0.002999999999999999,
+            0.0
+          ],
+          "after_center": [
+            0.015,
+            -0.002999999999999999,
+            0.0
+          ],
+          "radius": 0.0054236516362175646
+        }
+      ]
+    },
+    "right_thumb_elastomer": {
+      "dorsal_direction_local": [
+        -7.233509575522723e-17,
+        1.622929325219514e-16,
+        1.0
+      ],
+      "reference": "distal",
+      "combined_distal_reference": true,
+      "target_dorsal_coordinate_m": 0.0029095068070375935,
+      "spheres": [
+        {
+          "shift_m": 0.0029095068070375974,
+          "before_center": [
+            0.0,
+            -0.024,
+            0.0
+          ],
+          "after_center": [
+            -2.1045945348755004e-19,
+            -0.024,
+            0.0029095068070375974
+          ],
+          "radius": 0.004184808123430067
+        }
+      ]
+    },
+    "right_index_PP": {
+      "dorsal_direction_local": [
+        3.6732051033217944e-06,
+        3.6731916108860635e-06,
+        -0.9999999999865077
+      ],
+      "reference": "proximal",
+      "combined_distal_reference": false,
+      "target_dorsal_coordinate_m": 0.0010208862037272839,
+      "spheres": [
+        {
+          "shift_m": 0.0010207760075741843,
+          "before_center": [
+            0.030000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.03000000374951964,
+            3.749505867615262e-09,
+            -0.0010207760075604116
+          ],
+          "radius": 0.010041944014962983
+        },
+        {
+          "shift_m": 0.0010208200860354242,
+          "before_center": [
+            0.018000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.01800000374968155,
+            3.74966777624931e-09,
+            -0.001020820086021651
+          ],
+          "radius": 0.009208982355410705
+        },
+        {
+          "shift_m": 0.0010207209094976345,
+          "before_center": [
+            0.045000000000000005,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.04500000374931726,
+            3.749303481822704e-09,
+            -0.0010207209094838625
+          ],
+          "radius": 0.008603030586442448
+        }
+      ]
+    },
+    "right_index_MP": {
+      "dorsal_direction_local": [
+        3.673205103321795e-06,
+        -0.9999999999932538,
+        1.3492435730493805e-11
+      ],
+      "reference": "middle",
+      "combined_distal_reference": false,
+      "target_dorsal_coordinate_m": 0.0010480773384275973,
+      "spheres": [
+        {
+          "shift_m": 0.0010480112207357376,
+          "before_center": [
+            0.018000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.018000003849560166,
+            -0.0010480112207286675,
+            1.4140224040613296e-14
+          ],
+          "radius": 0.00906848948530482
+        },
+        {
+          "shift_m": 0.0,
+          "before_center": [
+            0.009000000000000001,
+            -0.003000000000000001,
+            0.0
+          ],
+          "after_center": [
+            0.009000000000000001,
+            -0.003000000000000001,
+            0.0
+          ],
+          "radius": 0.007499697309741971
+        }
+      ]
+    },
+    "right_index_DP": {
+      "dorsal_direction_local": [
+        3.673205103321795e-06,
+        -0.9999999999932538,
+        1.3492435730493805e-11
+      ],
+      "reference": "distal",
+      "combined_distal_reference": true,
+      "target_dorsal_coordinate_m": 0.0023090645137698773,
+      "spheres": [
+        {
+          "shift_m": 0.0,
+          "before_center": [
+            0.012,
+            -0.003000000000000001,
+            0.0
+          ],
+          "after_center": [
+            0.012,
+            -0.003000000000000001,
+            0.0
+          ],
+          "radius": 0.005558161713928514
+        }
+      ]
+    },
+    "right_index_elastomer": {
+      "dorsal_direction_local": [
+        -5.350207060406252e-22,
+        -5.224657521486097e-22,
+        1.0
+      ],
+      "reference": "distal",
+      "combined_distal_reference": true,
+      "target_dorsal_coordinate_m": 0.0023090645137698778,
+      "spheres": [
+        {
+          "shift_m": 0.005309064513769878,
+          "before_center": [
+            0.0,
+            -0.018,
+            -0.003
+          ],
+          "after_center": [
+            -2.8404594445723887e-24,
+            -0.018,
+            0.0023090645137698778
+          ],
+          "radius": 0.003836434230294348
+        }
+      ]
+    },
+    "right_middle_PP": {
+      "dorsal_direction_local": [
+        3.4914813388423958e-15,
+        3.6732051033465744e-06,
+        -0.9999999999932538
+      ],
+      "reference": "proximal",
+      "combined_distal_reference": false,
+      "target_dorsal_coordinate_m": 0.0010208369820791233,
+      "spheres": [
+        {
+          "shift_m": 0.0010208369820790186,
+          "before_center": [
+            0.030000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.030000000000000006,
+            3.749743612257567e-09,
+            -0.001020836982072132
+          ],
+          "radius": 0.010041944014962983
+        },
+        {
+          "shift_m": 0.0010208369820790604,
+          "before_center": [
+            0.018000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.018000000000000006,
+            3.7497436122577205e-09,
+            -0.0010208369820721738
+          ],
+          "radius": 0.009208982355410705
+        },
+        {
+          "shift_m": 0.0010208369820789661,
+          "before_center": [
+            0.045000000000000005,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.04500000000000001,
+            3.749743612257374e-09,
+            -0.0010208369820720795
+          ],
+          "radius": 0.008603030586442448
+        }
+      ]
+    },
+    "right_middle_MP": {
+      "dorsal_direction_local": [
+        3.4914813388423958e-15,
+        -1.0,
+        -2.2726877888365687e-22
+      ],
+      "reference": "middle",
+      "combined_distal_reference": false,
+      "target_dorsal_coordinate_m": 0.0010480552182536075,
+      "spheres": [
+        {
+          "shift_m": 0.0010480552182535446,
+          "before_center": [
+            0.018000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.018000000000000006,
+            -0.0010480552182535446,
+            -2.3819022965512757e-25
+          ],
+          "radius": 0.00906848948530482
+        },
+        {
+          "shift_m": 0.0,
+          "before_center": [
+            0.009000000000000001,
+            -0.003000000000000001,
+            0.0
+          ],
+          "after_center": [
+            0.009000000000000001,
+            -0.003000000000000001,
+            0.0
+          ],
+          "radius": 0.007499697309741971
+        }
+      ]
+    },
+    "right_middle_DP": {
+      "dorsal_direction_local": [
+        3.4914813388423958e-15,
+        -1.0,
+        -2.2726877888365687e-22
+      ],
+      "reference": "distal",
+      "combined_distal_reference": true,
+      "target_dorsal_coordinate_m": 0.0023090623777115523,
+      "spheres": [
+        {
+          "shift_m": 0.0,
+          "before_center": [
+            0.012,
+            -0.003000000000000001,
+            0.0
+          ],
+          "after_center": [
+            0.012,
+            -0.003000000000000001,
+            0.0
+          ],
+          "radius": 0.005558161713928514
+        }
+      ]
+    },
+    "right_middle_elastomer": {
+      "dorsal_direction_local": [
+        -2.2726879107409847e-22,
+        6.128236961898218e-28,
+        1.0
+      ],
+      "reference": "distal",
+      "combined_distal_reference": true,
+      "target_dorsal_coordinate_m": 0.002309062377711551,
+      "spheres": [
+        {
+          "shift_m": 0.005309062377711551,
+          "before_center": [
+            0.0,
+            -0.018,
+            -0.003
+          ],
+          "after_center": [
+            -1.206584188319483e-24,
+            -0.018,
+            0.002309062377711551
+          ],
+          "radius": 0.003836434230294348
+        }
+      ]
+    },
+    "right_ring_PP": {
+      "dorsal_direction_local": [
+        3.6732051033217944e-06,
+        3.6731916108860635e-06,
+        -0.9999999999865077
+      ],
+      "reference": "proximal",
+      "combined_distal_reference": false,
+      "target_dorsal_coordinate_m": 0.0010208862037272839,
+      "spheres": [
+        {
+          "shift_m": 0.0010207760075741843,
+          "before_center": [
+            0.030000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.03000000374951964,
+            3.749505867615262e-09,
+            -0.0010207760075604116
+          ],
+          "radius": 0.010041944014962983
+        },
+        {
+          "shift_m": 0.0010208200860354242,
+          "before_center": [
+            0.018000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.01800000374968155,
+            3.74966777624931e-09,
+            -0.001020820086021651
+          ],
+          "radius": 0.009208982355410705
+        },
+        {
+          "shift_m": 0.0010207209094976345,
+          "before_center": [
+            0.045000000000000005,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.04500000374931726,
+            3.749303481822704e-09,
+            -0.0010207209094838625
+          ],
+          "radius": 0.008603030586442448
+        }
+      ]
+    },
+    "right_ring_MP": {
+      "dorsal_direction_local": [
+        3.673205103321795e-06,
+        -0.9999999999932538,
+        1.3492435730493805e-11
+      ],
+      "reference": "middle",
+      "combined_distal_reference": false,
+      "target_dorsal_coordinate_m": 0.0010480773384275973,
+      "spheres": [
+        {
+          "shift_m": 0.0010480112207357376,
+          "before_center": [
+            0.018000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.018000003849560166,
+            -0.0010480112207286675,
+            1.4140224040613296e-14
+          ],
+          "radius": 0.00906848948530482
+        },
+        {
+          "shift_m": 0.0,
+          "before_center": [
+            0.009000000000000001,
+            -0.003000000000000001,
+            0.0
+          ],
+          "after_center": [
+            0.009000000000000001,
+            -0.003000000000000001,
+            0.0
+          ],
+          "radius": 0.007499697309741971
+        }
+      ]
+    },
+    "right_ring_DP": {
+      "dorsal_direction_local": [
+        3.673205103321795e-06,
+        -0.9999999999932538,
+        1.3492435730493805e-11
+      ],
+      "reference": "distal",
+      "combined_distal_reference": true,
+      "target_dorsal_coordinate_m": 0.0023090645137698773,
+      "spheres": [
+        {
+          "shift_m": 0.0,
+          "before_center": [
+            0.012,
+            -0.003000000000000001,
+            0.0
+          ],
+          "after_center": [
+            0.012,
+            -0.003000000000000001,
+            0.0
+          ],
+          "radius": 0.005558161713928514
+        }
+      ]
+    },
+    "right_ring_elastomer": {
+      "dorsal_direction_local": [
+        -5.350207060406252e-22,
+        -5.224657521486097e-22,
+        1.0
+      ],
+      "reference": "distal",
+      "combined_distal_reference": true,
+      "target_dorsal_coordinate_m": 0.0023090645137698778,
+      "spheres": [
+        {
+          "shift_m": 0.005309064513769878,
+          "before_center": [
+            0.0,
+            -0.018,
+            -0.003
+          ],
+          "after_center": [
+            -2.8404594445723887e-24,
+            -0.018,
+            0.0023090645137698778
+          ],
+          "radius": 0.003836434230294348
+        }
+      ]
+    },
+    "right_pinky_PP": {
+      "dorsal_direction_local": [
+        3.6732051033217953e-06,
+        3.673191610886065e-06,
+        -0.9999999999865077
+      ],
+      "reference": "proximal",
+      "combined_distal_reference": false,
+      "target_dorsal_coordinate_m": 0.0010208862037272839,
+      "spheres": [
+        {
+          "shift_m": 0.0010207760075741843,
+          "before_center": [
+            0.030000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.03000000374951964,
+            3.7495058676152646e-09,
+            -0.0010207760075604116
+          ],
+          "radius": 0.010041944014962983
+        },
+        {
+          "shift_m": 0.0010208200860354242,
+          "before_center": [
+            0.018000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.01800000374968155,
+            3.749667776249312e-09,
+            -0.001020820086021651
+          ],
+          "radius": 0.009208982355410705
+        },
+        {
+          "shift_m": 0.0010207209094976345,
+          "before_center": [
+            0.045000000000000005,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.04500000374931726,
+            3.749303481822705e-09,
+            -0.0010207209094838625
+          ],
+          "radius": 0.008603030586442448
+        }
+      ]
+    },
+    "right_pinky_MP": {
+      "dorsal_direction_local": [
+        3.6732051033217953e-06,
+        -0.9999999999932538,
+        1.34924357288534e-11
+      ],
+      "reference": "middle",
+      "combined_distal_reference": false,
+      "target_dorsal_coordinate_m": 0.0010480773384275973,
+      "spheres": [
+        {
+          "shift_m": 0.0010480112207357376,
+          "before_center": [
+            0.018000000000000002,
+            0.0,
+            0.0
+          ],
+          "after_center": [
+            0.018000003849560166,
+            -0.0010480112207286675,
+            1.4140224038894133e-14
+          ],
+          "radius": 0.00906848948530482
+        },
+        {
+          "shift_m": 0.0,
+          "before_center": [
+            0.009000000000000001,
+            -0.003000000000000001,
+            0.0
+          ],
+          "after_center": [
+            0.009000000000000001,
+            -0.003000000000000001,
+            0.0
+          ],
+          "radius": 0.007499697309741971
+        }
+      ]
+    },
+    "right_pinky_DP": {
+      "dorsal_direction_local": [
+        3.6732051033217953e-06,
+        -0.9999999999932538,
+        1.34924357288534e-11
+      ],
+      "reference": "distal",
+      "combined_distal_reference": true,
+      "target_dorsal_coordinate_m": 0.002309064513769878,
+      "spheres": [
+        {
+          "shift_m": 0.0,
+          "before_center": [
+            0.012,
+            -0.003000000000000001,
+            0.0
+          ],
+          "after_center": [
+            0.012,
+            -0.003000000000000001,
+            0.0
+          ],
+          "radius": 0.005558161713928514
+        }
+      ]
+    },
+    "right_pinky_elastomer": {
+      "dorsal_direction_local": [
+        -2.9764865024894254e-21,
+        -1.978952136093064e-22,
+        1.0
+      ],
+      "reference": "distal",
+      "combined_distal_reference": true,
+      "target_dorsal_coordinate_m": 0.002309064513769877,
+      "spheres": [
+        {
+          "shift_m": 0.005309064513769877,
+          "before_center": [
+            0.0,
+            -0.018,
+            -0.003
+          ],
+          "after_center": [
+            -1.5802358866081623e-23,
+            -0.018,
+            0.002309064513769877
+          ],
+          "radius": 0.003836434230294348
+        }
+      ]
+    }
+  },
+  "zero_pose_retained_pair_overlaps": [],
+  "scope": "Preview-only, no synthesis or controller change; same 50 radii and original exclusions.",
+  "limitation": "Dorsal bias intentionally reduces palmar coverage. Not a whole-volume collision certificate. Thumb uses the primary-finger normalized preference, not a direct thumb retarget."
+}

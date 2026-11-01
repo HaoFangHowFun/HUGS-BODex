@@ -1,0 +1,176 @@
+world:
+  type: scene_cfg
+  template_path: null
+  start: null
+  end: null
+robot_file: right_sharpa_wave_sim.yml
+robot_file_with_arm: null
+base_cfg_file: base_grasp.yml
+particle_file: particle_grasp_debug.yml
+gradient_file: gradient_grasp_fc.yml
+exp_name: debug
+seed_num: 20
+seeder_cfg:
+  obj_sample:
+    num: 128
+    inflate: 0.08
+    convex_hull: true
+    hull_cache_mode: exact
+    contact_obb_cache_mode: uniform_raw
+    contact_surface_points_mode: always
+    contact_surface_sample_num: 4096
+    collision_free: true
+  ik_init_q: null
+  load_path: null
+  skip_transfer: false
+  t: null
+  r: null
+  q:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  jitter_angle:
+  - - -180
+    - -15
+    - -15
+  - - 180
+    - 15
+    - 15
+  jitter_dist:
+  - - 0.0
+    - -0.03
+    - -0.03
+  - - 0.03
+    - 0.03
+    - 0.03
+grasp_contact_strategy:
+  contact_points_name:
+  - right_index_elastomer/0
+  - right_middle_elastomer/0
+  - right_ring_elastomer/0
+  - right_pinky_elastomer/0
+  - right_thumb_elastomer/0
+  contact_normals:
+  - &id001
+    - 0
+    - 0
+    - -1
+  - *id001
+  - *id001
+  - *id001
+  - *id001
+  opt_progress:
+  - 0.0
+  - 0.6
+  - 0.8
+  distance:
+  - 0.01
+  - 0.01
+  - 0.0
+  contact_query_mode:
+  - -1
+  - 0
+  - 0
+  save_qpos:
+  - false
+  - true
+  pregrasp_stage: 1
+  grasp_stage: 2
+  max_ge_stage: 0
+  additional_collision_contact_points_name:
+  - right_index_DP/0
+  - right_middle_DP/0
+  - right_ring_DP/0
+  - right_pinky_DP/0
+  - right_thumb_DP/0
+grasp_cfg:
+  task_dict:
+    f:
+    - 0
+    - 0
+    - 1
+    p:
+    - 0
+    - 0
+    - 0
+    t:
+    - 0
+    - 0
+    - 0
+    gamma: 180
+  ge_param:
+    type: qp
+    miu_coef:
+    - 0.1
+    - 0
+    solver_type: batch_reluqp
+    k_lower: 0.2
+    groups:
+    - - 0
+      - 1
+      - 2
+      - 3
+      - 4
+    weights:
+    - 1.0
+    multi_ge_type: concate
+    pressure_constraints:
+    - - - 0
+        - 1
+        - 2
+        - 3
+        - 4
+      - 1.0
+      - 5.0
+    - - - 0
+        - 1
+        - 2
+      - 0.4
+      - 3.0
+    - - - 4
+      - 0.5
+      - 1.0
+    enable_density: false
+    solve_interval: 5
+gradient:
+  cost:
+    grasp_cfg:
+      weight:
+      - - 100
+        - 1000
+        - 100
+        - 0
+      - - 100
+        - 1000
+        - 100
+        - 0
+      - - 100
+        - 1000
+        - 100
+        - 0
+  lbfgs:
+    n_iters: 500
+    inner_iters: 50
+    base_scale:
+    - 0.01
+    - 0.1
+    - 0.1

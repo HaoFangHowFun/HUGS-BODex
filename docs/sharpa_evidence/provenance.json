@@ -1,0 +1,22 @@
+{
+  "tip_comparison.json": {
+    "source_workspace_path": "reviews/sharpa_tip_refinement/comparison.json",
+    "sha256": "2d5eaa41384a6bbe6cbb0defa7e39d75d83bec4fa0c0a656361f665bfec2dad4"
+  },
+  "tip_geometry_validation.json": {
+    "source_workspace_path": "reviews/sharpa_tip_refinement/geometry_validation.json",
+    "sha256": "b0d1d36ff4369f25131d8493ccfdc5ac9c7ee30de75199c327269f80e9907ed6"
+  },
+  "pp_summary.json": {
+    "source_workspace_path": "reviews/sharpa_pp_refinement/summary.json",
+    "sha256": "d6a63a600d68a7cfac26dba926d7406b5ff1b5f645c1c867d0a203387f011939"
+  },
+  "active_configuration_verification.json": {
+    "source_workspace_path": "reviews/sharpa_optimizer_diagnosis/active_configuration_verification.json",
+    "sha256": "07f92e4116e282154c20706ead6bc7de7c18759a570a4b01afc0c8ff5b81d539"
+  },
+  "active_contact_adjustments.png": {
+    "source_workspace_path": "reviews/sharpa_tip_refinement/active_contact_adjustments.png",
+    "sha256": "aab6374fbf492d0e0f39784724f75dbf4bf9b0a1a1e894e7d4111517756c7ba6"
+  }
+}

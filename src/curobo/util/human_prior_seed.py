@@ -58,6 +58,7 @@ BUDGET_ROUNDING_CEIL = "ceil"
 BUDGET_ROUNDING_ROUND = "round"
 BUDGET_ROUNDING_MODES = {BUDGET_ROUNDING_CEIL, BUDGET_ROUNDING_ROUND}
 SUPPORTED_ROOT_POSE_HUMAN_PRIOR_ROBOTS = {
+    "right_sharpa_wave_sim.yml",
     "right_shadow_hand_sim.yml",
     "leap_sp.yml",
 }
