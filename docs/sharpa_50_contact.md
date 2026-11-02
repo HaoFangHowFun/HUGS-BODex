@@ -3,17 +3,12 @@ Historical workspace `reviews/` and `benchmarks/` links below require the origin
 
 # Sharpa 50-ball: DP contact eligibility, world-collision weight 100
 
-Adopted for the current 50-restored preset on 2026-10-31 at the user's request.
-World-collision weight was subsequently restored from 10 to 100 at the user's
-request, retaining DP eligibility. No sphere positions or radii were changed.
-Subsequently, the user authorized the PP sphere correction described in
-[the PP refinement report](../../reviews/sharpa_pp_refinement/README.md).
-Only the twelve long-finger PP spheres changed; all five contact balls remain fixed.
-Latest update: the user then authorized fingertip position/radius adjustment.
-The active preset now retains that PP correction and changes only the five
-contact balls relative to it; DP geometry remains as before. See the
-[fingertip refinement report](../../reviews/sharpa_tip_refinement/README.md).
-The generic `sim_sharpa.yml` / 34-ball default and the Shadow preset are unchanged.
+The adopted preset now uses the continuous four-finger geometry, fitted thumb
+and exposed fingertip contact balls, plus the Shadow-matched initial pose.
+**The user-selected schedule is 300/100/100**, with controller kp=7.5, kv=0,
+passive joint damping=0.05. Exact specification and results are versioned in
+[the adoption report](sharpa_evidence/20261102_adoption/README.md).
+The generic `sim_sharpa.yml` / 34-ball preset and Shadow are unchanged.
 
 ## Active configuration
 
@@ -35,19 +30,30 @@ penetration. Earlier DP stage clearances are 8 mm, 8 mm, then -2 mm.
 
 The world cost includes scene collision checks; its weight remains nonzero.
 Self-collision weight stays 100. The five elastomer attraction target identities,
-the 50-sphere count, canonical joints/URDF, initialization,
-500 iterations and the Bench controller/evaluation thresholds are unchanged.
+the 50-sphere count and canonical joints/URDF remain unchanged. The adopted
+initial pose is nonzero; the optimizer still uses 500 total iterations, split
+300/100/100. Controller/evaluation thresholds are unchanged by this adoption.
 
 ## Current preset validation
 
-The current contact-ball refinement lifted 10/20 and 11/20, with 7/20 and 9/20
+On 200 paired candidates in 20 selected scenes, the adopted 300-step first
+stage lifted **162/200 (81%)**, with **146/200** successful and all targets legal.
+1200 steps lifted 185/200 but is not the default. Squeeze limit violations were
+19 and 17 respectively; both had no MuJoCo warnings or pre-simulation rejection.
+These selected scenes do not establish full-suite generalization. Normal solver
+verification checks every sphere, the exact initial joints and 300/100/100
+schedule against the versioned specification.
+
+## Historical validation before the latest adoption
+
+The preceding contact-ball refinement lifted 10/20 and 11/20, with 7/20 and 9/20
 successful and valid at all stages. Normal solver construction confirms only
 the five contact balls differ from the PP preset, world/self weights remain
 100 and DP/pad clearances remain -2 mm. Worst static self penetration remains
 6.846 mm; this is not a collision-free readiness claim. The following results
 describe the preceding configurations.
 
-For the current PP-refined geometry, repeated lift results are 9/20 and 8/20,
+For the earlier PP-refined geometry, repeated lift results are 9/20 and 8/20,
 with 8/20 and 7/20 successful and valid at all stages. Zero-pose false PP
 overlaps were removed; PP volume coverage decreased from 90.97% to 87.19%.
 Normal solver construction confirms only the 12 PP spheres changed. See the
@@ -64,11 +70,11 @@ solver construction was checked again to verify weight 100 and DP eligibility.
 
 ## Mild-flex initialization trial (weight 100)
 
-The current weight-100 / DP-enabled preset was also tested with mild initial
+The earlier weight-100 / DP-enabled preset was also tested with mild initial
 flexion (MCP_FE/PIP 0.2 rad, DIP/thumb IP 0.1 rad). Two new zero-pose controls
 lifted 8/20 and 8/20; the matched-wrist mild-flex trials lifted 7/20 and 7/20.
 Late contact convergence did not consistently improve, although squeeze-limit
-violations decreased. The active initial pose remains all zeros. See the
+violations decreased. That trial retained zero joints at the time; the newly adopted pose differs. See the
 [preshape study](../../reviews/sharpa_optimizer_diagnosis/preshape_study/README.md)
 for exact inputs, convergence plots and validation.
 

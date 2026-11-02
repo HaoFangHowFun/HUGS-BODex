@@ -1,0 +1,65 @@
+{
+  "source": "/home/hao-fang/hugs-workspace/reviews/sharpa_continuous_spheres/continuous.yml",
+  "source_sha256": "e16469a16e399c41a5ff32e38635b7f9bc350c1bed540ebf33a42afcc733a135",
+  "method": "Constrained joint XYZ/radius fit of two DP orange balls and one green contact ball; DP/pad mesh union coverage, contact-patch fit, cross-section width, contact-apex alignment, upper/lower overlap bounds and continuity constraints. Four identical fingers share local geometry.",
+  "fit_success": true,
+  "fit_message": "Optimization terminated successfully",
+  "loss": 1.377744874564789,
+  "dp_frame_balls_mm": [
+    [
+      4.193215916046046,
+      -2.5509565930177778,
+      -0.09540485405310425,
+      6.38128167642977
+    ],
+    [
+      11.804778252681514,
+      -1.0795437002905117,
+      -0.023911294463848376,
+      6.523493916063967
+    ],
+    [
+      19.910464417731777,
+      -0.95992201593011,
+      -0.006627336283931224,
+      6.808264237527878
+    ]
+  ],
+  "green_overlap_upper_bound_fraction": 0.18784636321629705,
+  "orange_pair_overlap_fraction": 0.21421681237762208,
+  "local_adjacent_gap_mm": [
+    -5.151966525166312,
+    -5.225170937699645
+  ],
+  "mp_gap_mm": [
+    -4.9593169537498625,
+    -4.327227682938423,
+    -4.981892070061759
+  ],
+  "previous_contact_surface": {
+    "apex_nearest_pad_distance_mm": 0.3857593940568115,
+    "front_patch_radial_error_rms_mm": 1.0838807484067516,
+    "front_patch_radial_error_abs_p95_mm": 2.3027282145547505,
+    "radius_mm": 5.257142299999999,
+    "width_fraction": 0.7795963383696866
+  },
+  "new_contact_surface": {
+    "apex_nearest_pad_distance_mm": 0.0006257773781665271,
+    "front_patch_radial_error_rms_mm": 0.4735581523830826,
+    "front_patch_radial_error_abs_p95_mm": 1.1571710640327058,
+    "radius_mm": 6.808264237527878,
+    "width_fraction": 1.0041641823545007
+  },
+  "changed_links": [
+    "right_index_DP",
+    "right_index_elastomer",
+    "right_middle_DP",
+    "right_middle_elastomer",
+    "right_ring_DP",
+    "right_ring_elastomer",
+    "right_pinky_DP",
+    "right_pinky_elastomer"
+  ],
+  "formal_configuration_changed": false,
+  "grasp_simulations_run": 0
+}

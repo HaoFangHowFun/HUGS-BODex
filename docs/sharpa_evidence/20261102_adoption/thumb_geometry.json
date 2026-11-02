@@ -1,0 +1,114 @@
+{
+  "method": "Thumb-only MC/PP/DP/contact XYZ/radius fit to actual closed collision meshes; contact width/apex and limited overlap constraints; same sphere count; continuity at 37 articulation samples.",
+  "source": "/home/hao-fang/hugs-workspace/reviews/sharpa_contact_dp_fit/contact_dp.yml",
+  "source_sha256": "acab7fa2a93ba5c410b755930bda7d8de6dc972db26db7461bb62b80386b3aaf",
+  "pose_source": "/home/hao-fang/hugs-workspace/reviews/sharpa_thumb_shadow_pose/initial_pose.yml",
+  "pose_sha256": "2f31a1f08673f67112b123d8086a8be9b17e0b662b55cf78364afff379c2bdbd",
+  "fit_success": true,
+  "local_centers_radii_mm": [
+    [
+      21.261282784836144,
+      -11.371297947309147,
+      10.046731120680139,
+      15.499999999999998
+    ],
+    [
+      38.82214494506853,
+      -9.926122356405802,
+      10.527866691266608,
+      16.5
+    ],
+    [
+      57.428224009512405,
+      -9.326044956272359,
+      9.605575902099858,
+      15.499999999999998
+    ],
+    [
+      16.744195860900824,
+      -0.0037886097548206444,
+      -0.9991203434370315,
+      10.1
+    ],
+    [
+      34.48145989762338,
+      -0.04499866003915944,
+      -0.8115518995573273,
+      10.1
+    ],
+    [
+      10.56199157673708,
+      -2.5875770243289034,
+      -0.00594603105892936,
+      9.3
+    ],
+    [
+      21.76329246756481,
+      -2.503804920599714,
+      0.0208203138942877,
+      7.92287149033722
+    ]
+  ],
+  "shadow_thumb_overlap_fraction": 0.2038844388088285,
+  "before_contact": {
+    "radius_mm": 4.1717488,
+    "diameter_over_local_width": 0.5544479572749004,
+    "volume_overlap_fraction": 0.2802716163319265,
+    "surface_exposed_fraction": 0.6929397583007812,
+    "apex_mesh_distance_mm": 0.35148490650676745,
+    "contact_patch_radial_rms_mm": 2.339704923307311,
+    "contact_patch_radial_abs_p95_mm": 4.015213151514571
+  },
+  "after_contact": {
+    "radius_mm": 7.92287149033722,
+    "diameter_over_local_width": 1.005299385041581,
+    "volume_overlap_fraction": 0.2056640922330431,
+    "surface_exposed_fraction": 0.7866287231445312,
+    "apex_mesh_distance_mm": 0.002117295939380121,
+    "contact_patch_radial_rms_mm": 0.7185867829865448,
+    "contact_patch_radial_abs_p95_mm": 1.4302933064894068
+  },
+  "max_adjacent_gap_mm": -0.7066433665705958,
+  "volume_metrics": [
+    {
+      "part": "MC",
+      "before": {
+        "mesh_volume_covered_fraction": 0.8678598629093679,
+        "sphere_volume_outside_mesh_fraction": 0.12815608263198164
+      },
+      "after": {
+        "mesh_volume_covered_fraction": 0.7844630616907845,
+        "sphere_volume_outside_mesh_fraction": 0.10609676719461922
+      }
+    },
+    {
+      "part": "PP",
+      "before": {
+        "mesh_volume_covered_fraction": 0.9074283133890269,
+        "sphere_volume_outside_mesh_fraction": 0.11573157315731573
+      },
+      "after": {
+        "mesh_volume_covered_fraction": 0.6920298035673967,
+        "sphere_volume_outside_mesh_fraction": 0.03464566929133858
+      }
+    },
+    {
+      "part": "DP",
+      "before": {
+        "mesh_volume_covered_fraction": 0.7187938288920056,
+        "sphere_volume_outside_mesh_fraction": 0.23535994032077584
+      },
+      "after": {
+        "mesh_volume_covered_fraction": 0.7682328190743338,
+        "sphere_volume_outside_mesh_fraction": 0.1394344069128044
+      }
+    }
+  ],
+  "changed_links": [
+    "right_thumb_MC",
+    "right_thumb_PP",
+    "right_thumb_DP",
+    "right_thumb_elastomer"
+  ],
+  "grasp_tests_run": false
+}

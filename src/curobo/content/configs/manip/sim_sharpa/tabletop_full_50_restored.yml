@@ -25,27 +25,28 @@ seeder_cfg:
   skip_transfer: false
   t: null
   r: null
+  # Runtime joint order: thumb, index, middle, ring, pinky (see adopted specification).
   q:
+  - 1.0093502933778051
+  - -0.34909999999999997
+  - -0.1687091511905395
+  - -0.09499860936335604
+  - 1.9816571907549734e-27
+  - 0.3
+  - -0.1
+  - 0.0
+  - 0.0
+  - 0.3
   - 0.0
   - 0.0
   - 0.0
+  - 0.3
+  - 0.1
   - 0.0
   - 0.0
   - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
-  - 0.0
+  - 0.3
+  - 0.2
   - 0.0
   - 0.0
   jitter_angle:
@@ -170,6 +171,7 @@ gradient:
         - 100
         - 0
   lbfgs:
+    # Stage budgets: 300 / 100 / 100.
     n_iters: 500
     inner_iters: 50
     base_scale:

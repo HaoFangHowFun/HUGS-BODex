@@ -1,0 +1,53 @@
+{
+  "metrics": {
+    "300": {
+      "n": 200,
+      "success": 162,
+      "valid_success": 146,
+      "valid_targets": 181,
+      "force_closure": 182,
+      "half_friction_closure": 151,
+      "gravity_feasible": 171,
+      "warnings": 0,
+      "rejected_before_simulation": 0,
+      "limit_violations_by_stage": [
+        0,
+        0,
+        19
+      ],
+      "synthesis_seconds": 69.74507851398084,
+      "evaluation_seconds": 14.396235471998807,
+      "median_stage1_final50_total_cost": 1.661814570426941
+    },
+    "1200": {
+      "n": 200,
+      "success": 185,
+      "valid_success": 168,
+      "valid_targets": 183,
+      "force_closure": 192,
+      "half_friction_closure": 173,
+      "gravity_feasible": 190,
+      "warnings": 0,
+      "rejected_before_simulation": 0,
+      "limit_violations_by_stage": [
+        0,
+        0,
+        17
+      ],
+      "synthesis_seconds": 178.4553513469873,
+      "evaluation_seconds": 14.992763982038014,
+      "median_stage1_final50_total_cost": 0.6974269151687622
+    }
+  },
+  "paired_1200_vs_300": {
+    "improved": 27,
+    "regressed": 4,
+    "both_success": 158,
+    "both_failure": 11,
+    "lift_delta_pp": 11.500000000000004,
+    "scene_bootstrap_95ci_pp": [
+      6.5,
+      17.5
+    ]
+  }
+}

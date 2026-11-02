@@ -1,9 +1,105 @@
-# Sharpa project state — 2026-11-01
+# Sharpa project state — 2026-11-02
 
-The retained right-hand research preset is **50 spheres with PP correction and
-five refined elastomer contact spheres**. Select `sim_sharpa_50_restored.yml`.
-The generic `sim_sharpa.yml` entry remains the earlier 34-sphere preset; no default
-switch is made by this cleanup. Shadow configuration and evaluation remain intact.
+## Adopted specification — 2026-11-02
+
+At the user's request, the selected 50-sphere preset now adopts the latest
+four-finger and thumb collision/contact geometry and the Shadow-matched initial
+joint pose. **The production schedule remains 300/100/100 (500 total steps)**;
+1200/100/100 is comparison evidence only. Controller remains **7.5/0/0.05**.
+The adopted 300-step configuration lifted **162/200 (81.0%)**, with **146/200**
+successful and all commanded targets legal. The generic 34-sphere preset and
+Shadow are separate, unchanged configurations; select `sim_sharpa_50_restored.yml`.
+
+Versioned [specification and evidence](sharpa_evidence/20261102_adoption/README.md)
+include the exact 22-joint pose, sphere-file checksum, paired outcomes and
+normal-solver validation. Workspace experiment artifacts remain local.
+
+## Latest comparison: current thumb spheres and matched initial pose
+
+The configuration formerly previewed as `All-finger contact fit`, including the
+thumb, plus `Draft initial vs Shadow` completed a paired **200 candidates per budget**
+study. Both runs use identical full initial tensors: the historical 20-scene
+study's saved palm poses with all 22 joints replaced by the current preview
+pose. Actual schedules were **300/100/100** and **1200/100/100**, with the retained
+**kp=7.5, kv=0, passive damping=0.05** controller.
+
+| Metric | Stage 1: 300 | Stage 1: 1200 |
+|---|---:|---:|
+| Lift success | 162/200 (81.0%) | 185/200 (92.5%) |
+| Lift + all targets legal | 146/200 (73.0%) | 168/200 (84.0%) |
+| Pre-lift six-dimensional closure | 182/200 | 192/200 |
+| Squeeze limit violations | 19/200 | 17/200 |
+| Synthesis wall time, including load/logging | 69.7 s | 178.5 s |
+
+1200 steps gained 27 successful seeds and lost 4, for **+11.5 percentage points**
+(20-scene bootstrap 95% interval **+6.5 to +17.5**). Neither run had pregrasp/grasp
+limit violations, MuJoCo warnings, or pre-simulation rejections. Runtime checks
+verified all 50 sphere tensors, joint order and pose, actual stage counts, finite
+curves, unchanged source assets, and identical initial seeds across budgets.
+Apart from output experiment names, only the iteration schedule differs between
+the two effective manipulator configurations.
+
+These selected failure-scene results do not estimate the full 600-case suite.
+Relative to the preceding 119/200 study, thumb spheres and initial joints both
+changed, so that difference cannot isolate either cause. Each budget ran once.
+The 300-step configuration was subsequently adopted as specified above.
+The 1200-step result remains a comparison, not the default. Report and exact snapshots:
+[current configuration paired iteration study](../../reviews/sharpa_thumb_pose_iterations_200/README.md).
+
+## Earlier recorded progress: contact/DP geometry at 300 steps
+
+The preview `Contact + DP fit` was evaluated on the same saved 200 initial pose
+tensors from the earlier 20-scene study, using **300/100/100**, zero initial
+joints and the retained **7.5/0/0.05** controller. New spheres lifted
+**119/200 (59.5%)**, with **100/200** lifting successfully and all commanded
+targets within limits. Historical paired old-sphere 300-step runs lifted
+111/200 and 116/200; old spheres at 1200 steps lifted 149/200.
+
+The new-versus-first-old delta is +4.0 percentage points (20-scene bootstrap
+95% interval −3.0 to +11.5), and +1.5 points versus the old repeat (−6.0 to +9.0).
+This is not clear evidence of a stable improvement. Actual pre-lift closure was
+159/200 versus 157/200 in the first old run. Squeeze targets exceeded limits in
+43/200 cases; pregrasp/grasp targets stayed within limits. No MuJoCo warnings or
+pre-simulation rejections occurred. The run changed the complete preview sphere
+layout, not only the four contact balls, so it is not a contact-only ablation.
+
+Runtime audits verified all 50 local spheres against the preview snapshot,
+actual 300/100/100 stage counts, identical saved initial tensors, original
+collision policy and unchanged physical assets/controller. The experiment used
+isolated configuration files; at that time formal settings were unchanged and
+no adoption or commit was made. Full report:
+[new sphere 300-step paired study](../../reviews/sharpa_contact_dp_300_200/README.md).
+
+## Earlier recorded progress: first-stage iteration validation
+
+The 600-grasp paired experiment is complete. With **kp=7.5, kv=0, passive
+joint damping=0.05**, all 22 initial joints zero, and later optimizer stages
+fixed at 100/100, increasing stage 1 from 300 to 1200 steps produced:
+
+| Metric | Stage 1: 300 | Stage 1: 1200 |
+|---|---:|---:|
+| Lift success | 348/600 (58.0%) | 451/600 (75.2%) |
+| Lift success with all three targets within limits | 283/600 | 389/600 |
+| Actual six-dimensional force closure before lift, table excluded | 461/600 | 521/600 |
+| Lift success in the additional 400 candidates | 237/400 | 302/400 |
+
+The full comparison improved 135 candidates and regressed 32. Nineteen object
+categories improved; ToyFigure declined from 17/30 to 15/30. All 1,200 physical
+evaluations completed without MuJoCo warnings. Generation took about 2.7 times
+as long for the new 400 candidates. The prior 200 paired candidates were reused
+and their physical outcomes reverified; the remaining 400 were evaluated after
+selecting the iteration budget, on additional poses of the same 20 objects.
+
+This comparison uses saved, identical initial pose tensors between budgets.
+Historical Sharpa 384/600 and Shadow 476/600 used different generated poses and
+are references, not the paired baseline. Full results, paired cases, and source
+verification are in the workspace-local
+[600-grasp report](../../reviews/sharpa_stage1_1200_600/README.md).
+
+The older 600-case study used zero joints and previous spheres. Its 1200-step
+recommendation did not change the default. The subsequently adopted specification
+above uses the new geometry and initial pose, with the user-selected 300-step
+first stage. Shadow configuration and evaluation remain intact.
 
 ## Selected configuration
 
@@ -19,28 +115,33 @@ All configuration paths below are relative to `src/curobo/content/configs/`.
 | World / self collision weight | 100 / 100 |
 | Attraction targets | Five elastomer `/0` spheres |
 | Additional contact-eligible links | All five DP links, final clearance −2 mm |
-| Initial joints | All 22 zero; mild-flex trial was not adopted |
+| Initial joints | Shadow-matched thumb; four fingers spread and MCP-flexed (exact values in specification) |
+| Stage iterations | **300 / 100 / 100**, total 500 |
+| Controller kp / kv / passive damping | **7.5 / 0 / 0.05** |
 | Surface-pose transfer | `robot/hand_pose_transfer/right_sharpa_wave_s34.yml`, translation `[0, 0.01, 0.0989]` |
-| Geometry changes | 12 PP spheres + 5 contact spheres; DP geometry unchanged |
+| Geometry | Adopted continuous four-finger chain, fitted DP/contact balls, and fitted thumb MC/PP/DP/contact balls |
 
 The sphere total is **45 non-attraction spheres + 5 attraction spheres**.
 Both sets participate in collision handling. DP eligibility changes the soft
 clearance, not the five grasp-attraction targets or the self-collision exclusions.
 Canonical URDF joint ordering, axes, limits and kinematics are preserved.
 
-Contact centers/radii below are in each elastomer link's local frame, in mm:
+Contact centers/radii below are rounded local elastomer-frame values in mm;
+the sphere YAML and versioned checksum define the exact values.
 
 | Fingers | x | y | z | r |
 |---|---:|---:|---:|---:|
-| Index, middle, ring, pinky | −0.975931 | −20.670307 | −0.817575427 | 5.2571423 |
-| Thumb | 0 | −23.953850 | −0.564571292 | 4.1717488 |
+| Index, middle, ring, pinky | −0.007 | −19.910 | 0.960 | 6.808 |
+| Thumb | 0.021 | −21.763 | 2.504 | 7.923 |
 
-The pad-facing direction is local −Z. Center-ray protrusion is 0.400 mm;
-this does not bound the entire sphere's protrusion from the curved mesh.
+The pad-facing direction is local −Z. Contact diameter is approximately the
+local pad width; long-finger contact-volume overlap with DP balls is 18.8%, and
+thumb overlap is 20.6%. The chain is continuous in sampled articulations, but
+spheres do not fully enclose the mesh. In particular thumb MC/PP volume coverage
+is about 78.4%/69.2%. The matched initial pose's minimum enabled sphere gap is
+3.006 mm. Canonical joint limits and collision exclusions remain unchanged.
 
-![Adopted contact-sphere adjustment](sharpa_evidence/active_contact_adjustments.png)
-
-## Recorded results and limitations
+## Historical results and limitations
 
 Two matched-initialization runs of 20 candidates on one bottle:
 
@@ -76,7 +177,7 @@ them. They are not alternate definitions of the current retained geometry.
 | `sim` / `s34` | Generic 34-sphere preset, separate baseline |
 | `50_restored` | Frozen original 50-volume geometry |
 | `50_pp_refined` | Intermediate PP-only correction |
-| `50_tip_contact` | **Retained: PP correction + contact refinement** |
+| `50_tip_contact` | **Adopted: continuous finger/thumb geometry and exposed contact balls** |
 | `50_tip_dp`, `50_tip_combined` | Evaluated candidates, not adopted |
 | `50_manual` | Historical manual contact editing trial |
 | `50_volume_preview`, `50_shadow_seed_preview` | Historical geometry previews |
@@ -131,8 +232,31 @@ and verify world FK; do not convert old flange-root records again. The general
 Bench formatter does not infer this distinction. Historical conversion drivers
 are retained with their runs in the local workspace.
 
-The SSH three-hand initialization preview currently uses port **8089** and lets
-the user compare the corrected Sharpa transfer with its previous value. The
-existing static media service on **8088** remains separate. Historical
-sphere-preview CLI modes display their explicitly selected older configurations;
-they do not implicitly show the retained contact-refinement preset.
+The previous initialization and grasp-replay services were stopped. The current
+Shadow/Sharpa sphere comparison can be launched from `HUGS-DexGraspBench` with:
+
+```bash
+.venv/bin/python scripts/preview_collision_spheres.py --sharpa-spheres active --port 8089
+```
+
+The `active` mode reads the retained manipulator's robot file, contact targets,
+and initial joints, including the current PP/contact-sphere refinements. Green
+marks designated attraction/contact spheres, orange the other collision spheres;
+both participate in collision handling. Historical CLI modes remain available
+with explicit preset names. The display shows URDF meshes and BODex spheres,
+not MuJoCo convex contact geometry or measured force contacts.
+
+The active viewer now defaults to `BODex initial` and loads the adopted sphere
+and manipulator files directly, without workspace draft overrides. `Joint zero`
+remains available as an inspection pose. Optional sphere/pose draft arguments
+can still compare experimental configurations without changing formal settings.
+The current service is http://localhost:8089; workspace launch metadata is in
+`reviews/sharpa_shadow_spheres_current/launch.json`.
+
+The geometry/pose development history remains in workspace `reviews/`:
+`sharpa_continuous_spheres`, `sharpa_contact_dp_fit`, `sharpa_thumb_spheres_fit`,
+`sharpa_initial_pose_preview`, and `sharpa_thumb_shadow_pose`. Their notes describe
+states at the time of fitting; the adopted files and versioned specification
+above are authoritative. The original 119/200 study used zero joints and did
+not include the latest thumb refit. The current paired 162/200 versus 185/200
+study covers the adopted geometry and matched pose, at two iteration budgets.
