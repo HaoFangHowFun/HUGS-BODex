@@ -1,5 +1,8 @@
 # Sharpa project state — 2026-11-02
 
+Concise comparison tables for the three-day investigation:
+[Sharpa 三天測試與比較摘要](sharpa_three_day_test_summary.md).
+
 ## Adopted specification — 2026-11-02
 
 At the user's request, the selected 50-sphere preset now adopts the latest
