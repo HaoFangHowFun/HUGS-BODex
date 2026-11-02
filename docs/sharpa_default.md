@@ -20,8 +20,13 @@ preset and the 50-sphere preview experiments.
 - `assets/robot/sharpa_wave_s34/right_sharpa_wave_canonical_limits.urdf`:
   palm-root derivative referencing shared meshes; original canonical joint
   geometry, ordering and limits retained.
-- `configs/robot/hand_pose_transfer/right_sharpa_wave_s34.yml`: imported object
-  initialization transform, keyed by `right_hand_C_MC`.
+- `configs/robot/hand_pose_transfer/right_sharpa_wave_s34.yml`: object
+  initialization transform, keyed by `right_hand_C_MC`. Its translation was
+  corrected to `[0, 0.01, 0.0989]` on 2026-11-01 after five-seed visual checks.
+  The imported `Sharpa_content` translation had the opposite sign; BODex's
+  current transfer computes `root_translation = sampled_translation - R @ t`.
+  The corrected value places the sampled frame near the middle MCP rather than
+  behind the wrist.
 - `configs/robot/hand_pose_human_transfer/right_sharpa_wave_s34.yml`: existing
   human-prior calibration converted to the palm frame.
 - `configs/manip/sim_sharpa.yml` and `configs/manip/sim_sharpa/tabletop_full.yml`:

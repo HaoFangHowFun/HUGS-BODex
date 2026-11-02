@@ -20,6 +20,7 @@ All configuration paths below are relative to `src/curobo/content/configs/`.
 | Attraction targets | Five elastomer `/0` spheres |
 | Additional contact-eligible links | All five DP links, final clearance −2 mm |
 | Initial joints | All 22 zero; mild-flex trial was not adopted |
+| Surface-pose transfer | `robot/hand_pose_transfer/right_sharpa_wave_s34.yml`, translation `[0, 0.01, 0.0989]` |
 | Geometry changes | 12 PP spheres + 5 contact spheres; DP geometry unchanged |
 
 The sphere total is **45 non-attraction spheres + 5 attraction spheres**.
@@ -55,6 +56,15 @@ does not establish collision-free full evaluation readiness. Penetration is from
 MuJoCo collision proxies, not exact CAD geometry. Original squeeze extrapolation
 `2*grasp-pregrasp` can exceed limits; it was not silently clipped. See
 [versioned evidence](sharpa_evidence/README.md) for raw summary values and provenance.
+
+The corrected surface-pose transfer was evaluated on one scene each of bottle,
+mug, and camera with ten candidates per scene. It lifted 6/30, versus 3/30 for
+the earlier Sharpa transfer on those same scenes and 27/30 for historical Shadow.
+Five of the six new lifts also had all three commanded stages within joint
+limits. Candidate seeds and optimization trajectories were not paired, so the
+small comparison does not establish a causal lift-rate improvement. Detailed
+results and reproduction commands are in the workspace-local
+`benchmarks/sharpa_transfer_small/README.md`.
 
 ## Configuration history
 
@@ -121,7 +131,8 @@ and verify world FK; do not convert old flange-root records again. The general
 Bench formatter does not infer this distinction. Historical conversion drivers
 are retained with their runs in the local workspace.
 
-Existing SSH preview services use ports **8088 (Sharpa)** and **8089 (Shadow)**.
-This cleanup does not launch or replace either service. Historical sphere-preview
-CLI modes display their explicitly selected older configurations; they do not
-implicitly show the retained contact-refinement preset.
+The SSH three-hand initialization preview currently uses port **8089** and lets
+the user compare the corrected Sharpa transfer with its previous value. The
+existing static media service on **8088** remains separate. Historical
+sphere-preview CLI modes display their explicitly selected older configurations;
+they do not implicitly show the retained contact-refinement preset.

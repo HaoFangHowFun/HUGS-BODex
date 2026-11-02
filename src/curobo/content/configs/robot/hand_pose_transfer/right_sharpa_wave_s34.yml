@@ -1,3 +1,5 @@
+# The sampled palm frame sits near the middle MCP origin in the palm-root URDF.
+# BODex computes root position as sampled_position - root_rotation @ t.
 right_hand_C_MC:
   r:
   - - 1.0
@@ -11,5 +13,5 @@ right_hand_C_MC:
     - 1.0
   t:
   - 0
-  - -0.01
-  - -0.0989
+  - 0.01
+  - 0.0989
